@@ -28,9 +28,10 @@
       created (){
         this.$parent.headerTitle = '车牌缴费';
         var id=localStorage.getItem("userId");
-        this.$api.post('/park-onstreet/account/get_balance',{"userId":"2401084971680112"},r=>{
+        this.$api.post('/park-onstreet/account/get_balance',{"userId":id},r=>{
           this.cash=r.data;
-          this.userId=2401084971680112;
+          this.userId=id;
+//          this.userId=2401084971680112;
 //          this.$router.push({name:'Account',params:{cash:this.cash}});跳转同时传递参数
         })
       }

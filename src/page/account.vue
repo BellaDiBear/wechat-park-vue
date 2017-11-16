@@ -60,7 +60,7 @@
               "giftAmount":0,
               "amount":this.currentValue,
               "payTypeId":3,
-              "scanCode":"WAP",
+              "scanCode":"WAP"
             };
             this.$api.post('/park-onstreet/account/recharge',para,r=>{
                 if(r.code==1000){
