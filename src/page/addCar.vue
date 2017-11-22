@@ -18,7 +18,7 @@
   import { Toast } from 'mint-ui';
   export default {
     created() {
-      this.$parent.headerTitle = '添加车辆';
+
 
     },
     data() {

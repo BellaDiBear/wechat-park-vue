@@ -31,7 +31,7 @@
 
   export default {
     created() {
-      this.$parent.headerTitle = '我的车辆';
+
       this.$api.post('/park-onstreet/vehicle/get_vehicle_list', {"userId": localStorage.userId}, r => {
         for (let i = 0; i < r.data.length; i++) {
           r.data[i].isAutoPay = !!(parseInt(r.data[i].isAutoPay))
@@ -98,28 +98,34 @@
     box-shadow: 0 1px 0 0 #D9D9D9;
     margin: 10px 0;
   }
+
   .myCarCon {
     position: relative;
     /*top: 10px*/
   }
+
   .switchCon {
     margin: 10px 20px
   }
+
   .myCarTitle {
     font-size: 24px;
     color: #999;
     margin: 20px 20px;
   }
+
   .delImg {
     width: 36px;
     height: 36px;
     float: right;
     margin-right: 20px;
   }
-  .switchSpan{
+
+  .switchSpan {
     color: #999;
     font-size: 18px
   }
+
 
 
 </style>

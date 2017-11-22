@@ -26,7 +26,7 @@
         }
       },
       created (){
-        this.$parent.headerTitle = '车牌缴费';
+        this.$parent.headerTitle = '广安停车';
         var id=localStorage.getItem("userId");
         this.$api.post('/park-onstreet/account/get_balance',{"userId":id},r=>{
           this.cash=r.data;

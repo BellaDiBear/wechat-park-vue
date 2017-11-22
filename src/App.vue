@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <mt-header :title="headerTitle">
-        <mt-button icon="back" slot="left" @click.native="handleHeaderBack">返回</mt-button>
-    </mt-header>
+    <!--<mt-header :title="headerTitle">-->
+        <!--<mt-button icon="back" slot="left" @click.native="handleHeaderBack">返回</mt-button>-->
+    <!--</mt-header>-->
+
     <router-view></router-view>
   </div>
 </template>
@@ -16,7 +17,7 @@ export default {
   name: 'app',
   data: function() {
     return {
-      headerTitle: ''
+//      headerTitle: ''
     }
   },
   created() {
